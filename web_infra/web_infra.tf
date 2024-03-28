@@ -13,3 +13,7 @@ resource "aws_security_group" "ssh" {
     cidr_blocks = ["0.0.0.0/0"]
   }
 }
+
+data "aws_security_group" "default" {
+  name = "default"
+}
